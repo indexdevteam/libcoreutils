@@ -1,8 +1,8 @@
 {
   "name":
-    "tmcbase64",
+    "libcoreutils",
   "version":
-    "0.0.0",
+    "0.0.1",
   "description":
     "Javascript implementation of the base64 command from GNU Split.",
   "funding": {
@@ -37,10 +37,10 @@
     "dogeos"
   ],
   "homepage":
-    "https://github.com/themartiancompany/tmcbase64",
+    "https://github.com/themartiancompany/libcoreutils",
   "bugs": {
     "url":
-      "https://github.com/themartiancompany/tmcbase64/issues"
+      "https://github.com/themartiancompany/libcoreutils/issues"
   },
   "repository": {
     "type":
