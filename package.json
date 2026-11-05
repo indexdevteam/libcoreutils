@@ -110,19 +110,19 @@
     "libtmcsplit",
   "bin":
     {
-      "split":
-        "./tmcsplit",
-      "split.js":
-        "./tmcsplit",
-      "tmcsplit":
-        "./tmcsplit" },
+      "base64":
+        "./base64",
+      "base64.js":
+        "./base64",
+      "tmcbase64":
+        "./base64" },
   "scripts": {
     "build-fs-worker":
-      "npx webpack --mode 'production' --config 'fs-worker.webpack.config.cjs' --stats-error-details && cp 'fs-worker.js' 'dist/libtmcsplit' && cp 'fs-worker.js' 'dist/tmcsplit'",
+      "npx webpack --mode 'production' --config 'fs-worker.webpack.config.cjs' --stats-error-details && cp 'fs-worker.js' 'dist/libbase64' && cp 'fs-worker.js' 'dist/base64'",
     "build-lib":
-      "npx webpack --mode 'production' --config 'libtmcsplit.webpack.config.cjs' --stats-error-details && cp 'libtmcsplit.js' 'dist/libtmcsplit'",
+      "npx webpack --mode 'production' --config 'libbase64.webpack.config.cjs' --stats-error-details && cp 'libbase64.js' 'dist/libbase64'",
     "build-bin":
-      "npx webpack --mode 'production' --config 'webpack.config.cjs' --stats-error-details&& cp 'tmcsplit.js' 'dist/tmcsplit'",
+      "npx webpack --mode 'production' --config 'webpack.config.cjs' --stats-error-details && cp 'base64.js' 'dist/base64'",
     "build":
       "npm run build-fs-worker && npm run build-lib && npm run build-bin",
     "lint":
@@ -130,7 +130,7 @@
     "publish-npm":
       "npm lint && npm run build && npm publish --access public",
     "start":
-      "npx safely-serve 'dist/tmcsplit'",
+      "npx safely-serve 'dist/base64'",
     "test":
       "echo \"Error: no test specified\" && exit 1"
   }

@@ -32,7 +32,7 @@ const
       __dirname);
 const
   _input_file_name =
-    `tmcsplit`;
+    `base64`;
 const
   _input_file_path =
     `./${_input_file_name}`;

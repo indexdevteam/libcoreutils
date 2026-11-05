@@ -1,5 +1,5 @@
 /**    ----------------------------------------------------------------------
- *     libtmcsplit.webpack.config.cjs
+ *     libbase64.webpack.config.cjs
  *     ----------------------------------------------------------------------
  *     Copyright ©
  *       Pellegrino Prevete
@@ -32,7 +32,7 @@ const
       __dirname);
 const
   _input_file_name =
-    `libtmcsplit`;
+    `libbase64`;
 const
   _input_file_path =
     `./${_input_file_name}`;
