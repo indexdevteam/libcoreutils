@@ -275,10 +275,10 @@ install-scripts:
 	      "$(PREFIX)/lib/$(_PROJECT)/nodejs" \
 	      "$(DESTDIR)$(PREFIX)/lib/node_modules/$(_PROJECT)"; \
 	  fi; \
-	  if [[ ! -s "$(DESTDIR)$(PREFIX)/lib/node_modules/$(_PROGRAM)" ]]; then \
+	  if [[ ! -s "$(DESTDIR)$(PREFIX)/lib/node_modules/$(_PROJECT)" ]]; then \
 	    $(_MAKE_LINK) \
 	      "$(PREFIX)/lib/$(_PROJECT)/nodejs" \
-	      "$(DESTDIR)$(PREFIX)/lib/node_modules/$(_PROGRAM)"; \
+	      "$(DESTDIR)$(PREFIX)/lib/node_modules/$(_PROJECT)"; \
 	  fi; \
 	  if [[ ! -s "$(DESTDIR)$(PREFIX)/lib/$(_PROGRAM)" ]]; then \
 	    $(_MAKE_LINK) \
