@@ -3,7 +3,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 /**    ----------------------------------------------------------------------
- *     libtmcsplit
+ *     libbase
  *     ----------------------------------------------------------------------
  *     Copyright ©
  *       Pellegrino Prevete
@@ -72,19 +72,19 @@ const
   _require =
     _libcrash._require;
 const
-  _split_file_module =
+  _encoding_tools_module =
     await _require(
-      "split-file");
+      "encoding-tools");
 /* global
-     _split_file */
+     _bin2txt */
 const
-  _split_file =
-    _split_file_module._split_file;
+  _bin2txt =
+    _encoding_tools_module._bin2txt;
 /* global
-     _split_file_by_size */
+     _txt2bin */
 const
-  _split_file_by_size =
-    _split_file_module._split_file_by_size;
+  _txt2bin =
+    _encoding_tools_module._txt2bin;
 
 async function
   _output_files_get(
@@ -137,14 +137,14 @@ async function
 }
 
 async function
-  _split(
+  _base64(
+    _target_command,
     _input_file,
     _output_prefix,
     _chunks_amount,
     _size_max) {
   let
-    _msg,
-    _output_files;
+    _msg;
   const
     _chunks_amount_not_number =
       typeof(
@@ -175,22 +175,23 @@ async function
       _input_file,
       _size_max);
   }
-  _output_files =
-    _output_files_get(
-      _input_file,
-      _output_prefix);
+  const
+    _output_files =
+      _output_files_get(
+        _input_file,
+        _output_prefix);
   return _output_files;
 }
 
 // ES exports
 
 export {
-  _split
+  _base64,
 };
 
 // Common Javascript exports
 
 // module.exports = {
-//   _split:
-//     _split
+//   _base64:
+//     _base64
 // };

@@ -27,7 +27,7 @@
 _NPM ?= false
 SHELL ?= bash
 PREFIX ?= /usr/local
-_PROGRAM=split
+_PROGRAM=base64
 _PROJECT=tmc$(_PROGRAM)
 _PROJECT_NPM=@themartiancompany/$(_PROJECT)
 _NAMESPACE=themartiancompany

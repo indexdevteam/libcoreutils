@@ -1,10 +1,10 @@
 {
   "name":
-    "tmcsplit",
+    "tmcbase64",
   "version":
-    "0.0.21",
+    "0.0.0",
   "description":
-    "Basic Javascript implementation of GNU Split.",
+    "Javascript implementation of the base64 command from GNU Split.",
   "funding": {
     "type":
       "patreon",
@@ -12,7 +12,7 @@
       "https://patreon.com/tallero"
   },
   "man":
-    "./man/tmcsplit.1",
+    "./man/tmcbase64.1",
   "files": [
     "AUTHORS.rst",
     "COPYING",
@@ -20,15 +20,15 @@
     "dist",
     "eslint.config.mjs",
     "package.json",
-    "tmcsplit",
+    "base64",
     "fs-worker.webpack.config.cjs",
     "serve.json",
-    "libtmcsplit",
-    "libtmcsplit.webpack.config.cjs",
+    "libbase64",
+    "libbase64.webpack.config.cjs",
     "webpack.config.cjs"
   ],
   "keywords": [
-    "split",
+    "base64",
     "coreutils",
     "gnu",
     "senzacoreutils",
@@ -37,16 +37,16 @@
     "dogeos"
   ],
   "homepage":
-    "https://github.com/themartiancompany/tmcsplit",
+    "https://github.com/themartiancompany/tmcbase64",
   "bugs": {
     "url":
-      "https://github.com/themartiancompany/tmcsplit/issues"
+      "https://github.com/themartiancompany/tmcbase64/issues"
   },
   "repository": {
     "type":
       "git",
     "url":
-      "git+https://github.com/themartiancompany/tmcsplit.git"
+      "git+https://github.com/themartiancompany/tmcbase64.git"
   },
   "license":
     "AGPL-3.0-or-later",
@@ -87,8 +87,8 @@
       "npm:crash-js@^1000000000000019.1000000000000001.1000000000000001",
     "minimatch":
       "^11.0.4",
-    "split-file":
-      "npm:@themartiancompany/split-file@2.3.21"
+    "encoding-tools":
+      "^0.0.22"
   },
   "overrides": {
     "compression":
@@ -101,8 +101,8 @@
       "^3.0.5",
     "minimatch":
       "^11.0.4",
-    "split":
-      "./libtmcsplit"
+    "base64":
+      "./libtmcbase64"
   },
   "type":
     "module",

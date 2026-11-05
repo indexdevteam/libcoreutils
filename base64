@@ -100,14 +100,14 @@ const
 _yargv_get =
   _libcrash._yargv_get;
 const
-  _split_module =
+  _base64_module =
     await import(
-      "./libtmcsplit");
+      "./libbase64");
 /* global
-     _tmcsplit */
+     _base64 */
 const
-  _split =
-    _split_module._split;
+  _base64 =
+    _base64_module._base64;
 
 function
   _global_variables() {
@@ -117,7 +117,7 @@ function
   _override_set(
     "app",
     "name",
-    "tmcsplit");
+    "tmcbase64");
   /* global
        app_opts:
          writable */
@@ -242,7 +242,7 @@ function
       "",
       "Usage:",
       "",
-      "  tmcsplit",
+      "  tmcbase64",
       "    <in-file>",
       "    <out-txt-prefix>",
       "",
@@ -466,6 +466,24 @@ app_opts = [
   chunks_amount,
   size_max
 ];
-_split.apply(
-  null,
-  app_opts);
+try {
+  _base64.apply(
+    null,
+    app_opts);
+}
+catch(
+  _error) {
+  const
+    _msg =
+      "Error running '_base64' " +
+      "arguments:";
+  _msg_error(
+    _msg,
+    0);
+  _echo2(
+    _app_opts);
+  _echo2(
+    _error);
+  _exit(
+    1);
+}
