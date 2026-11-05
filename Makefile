@@ -242,6 +242,13 @@ install-scripts:
 	      "$(PREFIX)/lib/$(_PROJECT)/nodejs/$(_PROJECT)" \
 	      "$(BIN_DIR)/$(_PROJECT)"; \
 	  fi; \
+	  if [[ ! -s "$(BIN_DIR)/$(_PROGRAM).js" ]]; then \
+	    $(_MAKE_EXE) \
+	      "$(LIB_DIR)/nodejs/$(_PROJECT)"; \
+	    $(_MAKE_LINK) \
+	      "$(PREFIX)/lib/$(_PROJECT)/nodejs/$(_PROJECT)" \
+	      "$(BIN_DIR)/$(_PROGRAM).js"; \
+	  fi; \
 	  $(_INSTALL_DIR) \
 	    "$(LIB_DIR)/nodejs"; \
 	  rm \

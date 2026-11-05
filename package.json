@@ -85,8 +85,10 @@
   "main":
     "libtmcsplit",
   "bin":
-    { "tmcsplit":
-        "tmcsplit" },
+    { "split.js":
+        "./tmcsplit",
+      "tmcsplit":
+        "./tmcsplit" },
   "scripts": {
     "build-fs-worker":
       "npx webpack --mode 'production' --config 'fs-worker.webpack.config.cjs' --stats-error-details && cp 'fs-worker.js' 'dist/libtmcsplit' && cp 'fs-worker.js' 'dist/tmcsplit'",
