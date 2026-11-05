@@ -2,7 +2,7 @@
   "name":
     "tmcsplit",
   "version":
-    "0.0.20",
+    "0.0.21",
   "description":
     "Basic Javascript implementation of GNU Split.",
   "funding": {
@@ -28,6 +28,10 @@
     "webpack.config.cjs"
   ],
   "keywords": [
+    "split",
+    "coreutils",
+    "gnu",
+    "senzacoreutils",
     "ur",
     "themartiancompany",
     "dogeos"
@@ -63,8 +67,12 @@
       "^10.14.0",
     "globals":
       "^17.3.0",
+    "@eslint/config-array":
+      "^0.23.5",
     "@eslint/js":
       "^10.0.1",
+    "@eslint/object-schema":
+      "^3.0.5",
     "minimatch":
       "^11.0.4",
     "safely-serve":
@@ -85,6 +93,14 @@
   "overrides": {
     "compression":
       "^1.8.2",
+    "eslint":
+      "^10.14.0",
+    "@eslint/config-array":
+      "^0.23.5",
+    "@eslint/object-schema":
+      "^3.0.5",
+    "minimatch":
+      "^11.0.4",
     "split":
       "./libtmcsplit"
   },
