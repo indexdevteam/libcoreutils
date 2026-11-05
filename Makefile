@@ -363,4 +363,6 @@ uninstall-man:
 	rm \
 	  "$(MAN_DIR)/man1/$(_PROJECT).1"
 
-.PHONY: check build build-man build-npm build-webpack install install-doc install-man install-npm install-scripts shellcheck uninstall-man uninstall-scripts
+uninstall: uninstall-man uninstall-scripts
+
+.PHONY: check build build-man build-npm build-webpack install install-doc install-man install-npm install-scripts shellcheck uninstall-man uninstall-scripts uninstall
