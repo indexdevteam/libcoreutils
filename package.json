@@ -128,7 +128,7 @@
     "build-base64":
       "npx webpack --mode 'production' --config 'base64.webpack.config.cjs' --stats-error-details && cp 'base64.js' 'dist/base64'",
     "build-libcoreutils":
-      "npx webpack --mode 'production' --config 'webpack.config.cjs' --stats-error-details && cp 'base64.js' 'dist/base64'",
+      "npx webpack --mode 'production' --config 'webpack.config.cjs' --stats-error-details && cp 'libcoreutils.js' 'dist/libcoreutils'",
     "build-bin":
       "npm run build-base64",
     "build":
