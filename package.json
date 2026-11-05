@@ -25,6 +25,7 @@
     "serve.json",
     "libbase64",
     "libbase64.webpack.config.cjs",
+    "libcoreutils",
     "webpack.config.cjs"
   ],
   "keywords": [

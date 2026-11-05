@@ -26,18 +26,17 @@
   https://img.shields.io/npm/last-update/tmcsplit)](
     https://npmjs.org/package/tmcsplit)
 
-Javascript GNU Split rewrite.
+Javascript of some GNU Corutils programs.
 
-Splittable with number of parts or maximum bytes per part.
+Includes `base64`.
 
-It works both in Node.js and in web browsers
-using the
+It uses the
+[Encoding Tools](
+  https://github.com/themartiancompany/encoding-tools)
+and the 
 [Crash Javacript](
   https://github.com/themartiancompany/crash-js)
-and
-[Split File](
-  https://github.com/themartiancompany/node-split-file)
-modules.
+library modules.
 
 ### Installation
 
@@ -48,27 +47,27 @@ with the following command:
 npm \
   install \
     --save \
-    @themartiancompany/tmcsplit
+    "libcoreutils"
 ```
 
-You can then run the program with
+You can then run one of the programs with
 
 ```bash
 npx \
-  "tmcsplit"
+  "base64"
 ```
 
-or just with `tmcsplit` if you install
+or just with `base64.js` if you have installed
 the program system-wide using npm from this source
 repository or from the
 [NPM Registry](
-  https://www.npmjs.com/package/tmcsplit)
+  https://www.npmjs.com/package/libcoreutils)
 
 ```
 npm \
   -g \
   install \
-    "split-file"
+    "libcoreutils"
 ```
 
 or if using GNU make in this repository
@@ -90,14 +89,14 @@ package from the
 
 ```bash
 ur \
-  tmcsplit
+  "nodejs-libcoreutils"
 ```
 
 ### Documentation
 
 Upon installation the manual can be accessed with
-`man tmcsplit` but really it's the same as
-GNU Split, so you can also refer to `man split`
+`man base64.js` but really it's the same as
+GNU Split, so you can also refer to `man base64`
 for what is it implemented.
 
 # License
