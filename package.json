@@ -107,7 +107,7 @@
   "type":
     "module",
   "main":
-    "libtmcsplit",
+    "libcoreutils",
   "bin":
     {
       "base64":
