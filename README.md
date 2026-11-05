@@ -30,6 +30,10 @@ Javascript of some GNU Corutils programs.
 
 Includes `base64`.
 
+The Coreutils library is part of
+[`senzacoreutils`](
+  https://github.com/themartiancompany/senzacoreutils).
+
 It uses the
 [Encoding Tools](
   https://github.com/themartiancompany/encoding-tools)
