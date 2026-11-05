@@ -4,7 +4,7 @@
   "version":
     "0.0.1",
   "description":
-    "Javascript implementation of the base64 command from GNU Split.",
+    "Javascript implementations of some coreutils.",
   "funding": {
     "type":
       "patreon",

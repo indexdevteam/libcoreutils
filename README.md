@@ -20,7 +20,7 @@
 [comment]: <> (If not, see <https://www.gnu.org/licenses/>.)
 
 
-# The Martian Company's Split (`tmcsplit`)
+# Coreutils library (`libcoreutils.js`)
 
 [![NPM version](
   https://img.shields.io/npm/last-update/tmcsplit)](

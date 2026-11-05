@@ -28,8 +28,8 @@ _NPM ?= false
 SHELL ?= bash
 PREFIX ?= /usr/local
 _PROGRAM=base64
-_PROJECT=libbase
-_PROJECT_NPM=@themartiancompany/$(_PROJECT)
+_PROJECT=libcoreutils
+_PROJECT_NPM=libcoreutils
 _NAMESPACE=themartiancompany
 DOC_DIR=$(DESTDIR)$(PREFIX)/share/doc/$(_PROJECT)
 USR_DIR=$(DESTDIR)$(PREFIX)
@@ -102,8 +102,8 @@ build-man:
 	  -p \
 	  "build/man"
 	rst2man \
-	  "man/$(_PROJECT).1.rst" \
-	  "build/man/$(_PROJECT).1"
+	  "man/base64.1.rst" \
+	  "build/man/base64.1"
 
 build-npm:
 
@@ -361,7 +361,7 @@ uninstall-scripts:
 uninstall-man:
 
 	rm \
-	  "$(MAN_DIR)/man1/$(_PROJECT).1"
+	  "$(MAN_DIR)/man1/base64.1"
 
 uninstall: uninstall-man uninstall-scripts
 
