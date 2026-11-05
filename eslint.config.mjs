@@ -29,7 +29,7 @@ import { defineConfig } from "eslint/config";
 
 const
   _project =
-    "tmcsplit";
+    "tmcbase64";
 
 const
   _ignores = [
@@ -40,7 +40,9 @@ const
      "fs-worker.js",
      "**/*.fs-worker.js",
      `**/*.${_project}.js`,
+     `**/*.base64.js`,
      `**/*.lib${_project}.js`,
+     `**/*.libbase64.js`,
      "man/**"
    ];
 export default defineConfig([
@@ -54,7 +56,9 @@ export default defineConfig([
          "error" },
    files:
      [ "**/*.{js,mjs,cjs}",
+       `**/base64`,
        `**/${_project}*`,
+       `**/libbase64`,
        `**/lib${_project}`
      ],
    plugins:
