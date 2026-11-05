@@ -68,6 +68,7 @@ NPM_FILES=\
   "COPYING" \
   "AUTHORS.rst" \
   "base64" \
+  "base64.webpack.config.cjs" \
   "dist" \
   "eslint.config.mjs" \
   "fs-worker.webpack.config.cjs" \
