@@ -2,9 +2,9 @@
   "name":
     "libcoreutils",
   "version":
-    "0.0.1",
+    "0.0.24",
   "description":
-    "Javascript implementations of some coreutils.",
+    "Javascript implementations of some GNU coreutils.",
   "funding": {
     "type":
       "patreon",
@@ -12,7 +12,7 @@
       "https://patreon.com/tallero"
   },
   "man":
-    "./man/tmcbase64.1",
+    "./man/base64.js.1",
   "files": [
     "AUTHORS.rst",
     "COPYING",
@@ -119,11 +119,17 @@
         "./base64" },
   "scripts": {
     "build-fs-worker":
-      "npx webpack --mode 'production' --config 'fs-worker.webpack.config.cjs' --stats-error-details && cp 'fs-worker.js' 'dist/libbase64' && cp 'fs-worker.js' 'dist/base64'",
-    "build-lib":
+      "npx webpack --mode 'production' --config 'fs-worker.webpack.config.cjs' --stats-error-details; cp 'fs-worker.js' 'dist/libbase64'; cp 'fs-worker.js' 'dist/base64'; cp 'fs-worker.js' 'dist/libcoreutils'",
+    "build-libbase64":
       "npx webpack --mode 'production' --config 'libbase64.webpack.config.cjs' --stats-error-details && cp 'libbase64.js' 'dist/libbase64'",
-    "build-bin":
+    "build-lib":
+      "npm run build-libbase64; npm run build-libcoreutils",
+    "build-base64":
+      "npx webpack --mode 'production' --config 'base64.webpack.config.cjs' --stats-error-details && cp 'base64.js' 'dist/base64'",
+    "build-libcoreutils":
       "npx webpack --mode 'production' --config 'webpack.config.cjs' --stats-error-details && cp 'base64.js' 'dist/base64'",
+    "build-bin":
+      "npm run build-base64",
     "build":
       "npm run build-fs-worker && npm run build-lib && npm run build-bin",
     "lint":
@@ -131,7 +137,7 @@
     "publish-npm":
       "npm lint && npm run build && npm publish --access public",
     "start":
-      "npx safely-serve 'dist/base64'",
+      "npx safely-serve 'dist/libcoreutils'",
     "test":
       "echo \"Error: no test specified\" && exit 1"
   }
