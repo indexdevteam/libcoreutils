@@ -22,7 +22,7 @@
 
 
 ============================================================
-The Martian Company's Base64 Authors
+The Martian Company's Coreutils Library Authors
 ============================================================
 
 * Pellegrino Prevete
