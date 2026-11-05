@@ -67,11 +67,12 @@ NPM_FILES=\
   "README.md" \
   "COPYING" \
   "AUTHORS.rst" \
+  "base64" \
   "dist" \
   "eslint.config.mjs" \
   "fs-worker.webpack.config.cjs" \
-  "lib$(_PROJECT)" \
-  "lib$(_PROJECT).webpack.config.cjs" \
+  "libbase64" \
+  "libbase64.webpack.config.cjs" \
   "package.json" \
   "$(_PROJECT)" \
   "webpack.config.cjs"
